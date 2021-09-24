@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dicee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/diceStyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  <script src="/javascript/diceIndex.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+  <%- include("partials/header.ejs") -%>
+    <br>
+    <div class="container">
+      <h1>Dice Roll</h1>
+      <div class="winner">
+        <h6 id="h6">Who's Gonna win?</h6>
+      </div>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="/images/diceimages/dice6.png" id="player1dice">
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="/images/diceimages/dice6.png" id="player2dice">
+      </div>
+
+      <div>
+        <br>
+        <button type="button" class="button but" onclick="compare()">Roll</button>
+      </div>
+</body>
+
+<footer>
+  🎲 J-Kizzy 🎲
+</footer>
+
+</html>

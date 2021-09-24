@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS file Included -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tttstyles.css">
+</head>
+
+<body class="bg-success text-warning">
+  <%- include("partials/header.ejs") -%>
+  <div id="main">
+    <h1>TIC TAC TOE</h1>
+    <h2 id=status>Player 1's Turn</h2>
+    <!-- Game Instructions -->
+    <p id="ins">Game starts by just Tap on
+      box<br><br>First Player starts as
+      <b>X</b><br>Second
+      Player srtarts as <b>O</b>
+    </p>
+
+
+    <br><br>
+
+    <div class="container grid">
+    <div class="row">
+
+      <input style="font-size:100px" class="col bg-danger text-primary" type="text" id="b1" readonly>
+      <input style="font-size:100px" class="col bg-danger text-primary" type="text" id="b2" readonly>
+      <input style="font-size:100px" class="col bg-danger text-primary" type="text" id="b3" readonly>
+      <br><br>
+      </div>
+<div class="row">
+      <input style="font-size:100px" class="col bg-danger text-primary" type="text" id="b4"  readonly>
+      <input style="font-size:100px" class="col bg-danger text-primary" type="text" id="b5"  readonly>
+      <input style="font-size:100px" class="col bg-danger text-primary" type="text" id="b6"  readonly>
+      <br><br>
+</div>
+<div class="row">
+      <input style="font-size:100px" class="col col bg-danger text-primary" type="text" id="b7"  readonly>
+      <input style="font-size:100px" class="col col bg-danger text-primary" type="text" id="b8" readonly>
+      <input style="font-size:100px" class="col col bg-danger text-primary" type="text" id="b9"  readonly>
+<br><br>
+    </div>
+    </div>
+    <!-- Grid end here  -->
+    <br><br><br>
+    <!-- Button to reset game -->
+    <button id="but" onclick="reset()" class="btn btn-warning">
+      RESET
+    </button>
+
+    <br><br>
+    <!-- Space to show player turn -->
+    <p id="print"></p>
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/javascript/tttIndex.js" charset="utf-8"></script>
+</body>
+
+
+</html>

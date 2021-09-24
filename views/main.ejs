@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+
+  <title>Cover Template · Bootstrap v5.1</title>
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <link href="/css/mstyles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+</head>
+<body class="bg-danger bg-danger">
+<%- include("partials/header.ejs") -%>
+
+  <section id="testimonials">
+    <div id="carouselExampleIndicators" class="carousel slide bg-warning" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bt" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bt" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bt" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="bt" aria-label="Slide 4"></button>
+      </div>
+      <div class="container-fluid">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <form action="/" method="post"><button type="submit" class="btn btn-outline-dark btns">
+                <h1>Dice</h1>
+              </button></form>
+            <br>
+            <img class="testimonial_image" src="images/diceImages/dice6.png" alt="dice">
+            <p>Have you been indecisive about a topic or decision with your friend. This game of chance allows you to simultaneously roll 2 dice with just the press of a button. After the die have been rolled, the game will automatically indcate the
+              winner of the round and display said winner on the top of the webpage.</p>
+          </div>
+          <div class="carousel-item">
+            <form action="/drums" method="post"><button type="submit" class="btn btn-outline-dark btns">
+                <h1>Drum Kit</h1>
+              </button></form>
+            <br>
+            <img class="testimonial_image" src="images/main/drums.png" alt="drum">
+            <p>Why buy an expensive drum set that takes a a lot of space when you can use this simple web application designed to emulate a drum kit for free? This application allows you to use your mouse to click on the drum images to play the sound
+              of the particular drum, or press on their respective keys produce the sound.</p>
+          </div>
+          <div class="carousel-item">
+            <form action="/simong" method="post"><button type="submit" class="btn btn-outline-dark btns">
+                <h1>Simon</h1>
+              </button></form>
+            <br>
+            <img class="testimonial_image" src="images/main/simon.jfif" alt="simon">
+            <p>Ready to test your memory? This Simon game allows you to do just that. This application requires you to memorize a sequence of button presses in order to pass to the next level. With each level being more challenging than the last,
+              this game will have your engaged for hours.</p>
+          </div>
+          <div class="carousel-item">
+            <form action="/tttg" method="post"><button type="submit" class="btn btn-outline-dark btns">
+                <h1>Tic Tac Toe</h1>
+              </button></form>
+            <br>
+            <img class="testimonial_image length" src="images/main/ttt.jpg" alt="tic tac toe">
+            <p>A game for all ages, this tic tac toe variant sticks to basic and allows you to play the timeless game just like you have when you were a kid. Just press on the squares on the grid, and your
+              game piece will be drawn on the respective space. First person to line three of their pieces in a row wins!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="bg-primary" id="me">
+
+    <h3>The Creator</h3>
+    <h6>My name is John Kelly and I am an aspirng full stack developer. I started my journey in the beginning of 2020 and have been in love ever since. Since then, I have graduated from Albany State Univeristy, completed Harvard's CS50 course and "The Complete 2021 Web Development Bootcamp" by Dr.Angelu Yu, and few of my projects to my GitHub. If you are interested in more games or other ideas, feel free to contact my by selecting one of the icons below. I hope you enjoy my mini-games. </h6>
+
+
+  </section>
+
+<section>
+</section>
+  <footer class= "bg-success" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p><a href= "https://twitter.com/john_2strong"><i class=" fab fa-twitter c"></i></a>
+            <a href= "https://github.com/SwoleJohn59"><i class=" fab fa-github"></i><a>
+          <a href= "https://www.linkedin.com/in/john-kelly-b96b1a18a?trk=public_profile_browsemap_profile-result-card_result-card_full-click"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:batboy.john91@gmail.com"><i class=" fas fa-envelope c"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="j">J-Kizzy</p>
+
+  </footer>
+</section>
+
+<section class="stack">
+  <div class="row">
+    <div class="col-lg-12">
+      <p><i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js-square"></i>
+        <i class="fab fa-node-js"></i>
+</section>
+
+</body>
