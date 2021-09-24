@@ -67,6 +67,4 @@ res.redirect("/drum");
       });
 
 
-app.listen(3000, function(){
-  console.log("Server is on port 3K");
-});
+app.listen(process.env.PORT || 5000);
