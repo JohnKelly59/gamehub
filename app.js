@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const  path = require('path');
 const app = express();
+require("dotenv").config()
 var https = require('https');
 
 
@@ -11,6 +12,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.set('view engine', 'ejs');
+
+
 
 
 app.post("/home", function(req, res){
@@ -102,7 +105,7 @@ res.redirect("/drum");
 
       const options = {
         method: "POST",
-        auth: "J-Kizzy:d3cbe6e0434f7171b245bb193b226a8d-us5"
+        auth: process.env.API_KEY
       }
       const request = https.request(url, options, function(response){
       if (response.statusCode === 200) {
