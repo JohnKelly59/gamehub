@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const  path = require('path');
 const app = express();
+var https = require('https');
+
 
  app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({
@@ -65,6 +67,66 @@ res.redirect("/drum");
 
     res.redirect("/ttt");
       });
+
+
+
+      app.post("/mailC", function(req, res){
+
+      res.redirect("/mail");
+        });
+
+      app.get("/mail", function(req, res) {
+        res.render("signup");
+      });
+
+      app.post("/send", function(req, res) {
+        const first = req.body.firstName;
+        const last = req.body.lastName;
+        const email = req.body.email;
+        console.log(first, last, email);
+
+        const data = {
+          members: [{
+            email_address: email,
+            status: "subscribed",
+            merge_fields: {
+              FNAME: first,
+              LNAME: last,
+            }
+
+          }
+        ]
+      };
+      const jsonData = JSON.stringify(data);
+      const url = "https://us5.api.mailchimp.com/3.0/lists/92d5775add";
+
+      const options = {
+        method: "POST",
+        auth: "J-Kizzy:d3cbe6e0434f7171b245bb193b226a8d-us5"
+      }
+      const request = https.request(url, options, function(response){
+      if (response.statusCode === 200) {
+        res.render("success")
+      }
+      else {
+        res.render("failure")
+      }
+
+        response.on("data", function(data){
+          console.log(JSON.parse(data));
+        })
+      })
+
+      request.write(jsonData);
+      request.end();
+
+      });
+
+      app.post("/retry", function(req, res){
+        res.redirect("/mail");
+      })
+
+
 
 
 app.listen(process.env.PORT || 5000);
