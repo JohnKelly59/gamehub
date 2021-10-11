@@ -105,7 +105,7 @@ res.redirect("/drum");
 
       const options = {
         method: "POST",
-        auth: process.env.API_KEY
+        auth: config.MY_KEY
       }
       const request = https.request(url, options, function(response){
       if (response.statusCode === 200) {
