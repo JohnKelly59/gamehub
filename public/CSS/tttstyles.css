@@ -10,7 +10,8 @@ width: 150px;
 }
 
 .grid{
-   position: relative;
+  min-width: 0;
+  min-height: 0;
 }
 
 #title{
@@ -52,4 +53,10 @@ font-size: 30px;
   padding: 0;
 border: none;
 background: none;
+}
+
+table{
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 }
