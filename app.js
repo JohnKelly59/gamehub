@@ -13,10 +13,6 @@ app.use(bodyParser.urlencoded({
 
 app.set('view engine', 'ejs');
 
-const port = process.env.PORT || 8081;
-app.listen(port, () => {
-  console.log("Server is listening on: ", port);
-});
 
 
 app.post("/home", function(req, res){
@@ -132,6 +128,9 @@ res.redirect("/drum");
         res.redirect("/mail");
       })
 
-
+      const port = process.env.PORT || 8081;
+      app.listen(port, () => {
+        console.log("Server is listening on: ", port);
+      });
 
    
