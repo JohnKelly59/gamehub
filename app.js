@@ -13,9 +13,10 @@ app.use(bodyParser.urlencoded({
 
 app.set('view engine', 'ejs');
 
-app.listen(process.env.PORT || 5000);
-module.exports = app
-
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log("Server is listening on: ", port);
+});
 
 
 app.post("/home", function(req, res){
