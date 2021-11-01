@@ -13,6 +13,8 @@ app.use(bodyParser.urlencoded({
 
 app.set('view engine', 'ejs');
 
+app.listen(process.env.PORT || 5000);
+module.exports = app
 
 
 
@@ -131,5 +133,4 @@ res.redirect("/drum");
 
 
 
-     app.listen(process.env.PORT || 5000);
-    module.exports = app
+   
