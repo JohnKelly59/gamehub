@@ -1,5 +1,5 @@
 var config = {
-    MY_KEY: "J-Kizzy:43f48718daec7cf258e6cb63b56b4c8c-us5"
+    MY_KEY: "J-Kizzy:e95b92f77cb00485b29134dec3bab447-us5"
 }
 
 module.exports = config;
