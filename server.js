@@ -6,7 +6,8 @@ require("dotenv").config()
 var https = require('https');
 var config = require('./config');
 
- app.use(express.static(__dirname + 'public'));
+app.use(express.static(path.join(__dirname + '/public')));
+
 app.use(bodyParser.urlencoded({
   extended: true
 }));
