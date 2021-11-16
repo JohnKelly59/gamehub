@@ -11,7 +11,10 @@
   "dependencies": {
     "body-parser": "^1.19.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "config": "^3.3.6",
+=======
+>>>>>>> 349d50db4840e51a949ae0bfa199b3d59bb9d23a
 =======
 >>>>>>> 349d50db4840e51a949ae0bfa199b3d59bb9d23a
     "dotenv": "^10.0.0",
