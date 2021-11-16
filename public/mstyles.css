@@ -1,0 +1,80 @@
+body{
+  font-family: 'Fredoka One', cursive;
+}
+
+.btns{
+  padding: 0;
+border: none;
+background: none;
+font-size: 30px;
+}
+
+
+.btns2{
+  font-size: 20px;
+  padding: 0;
+border: none;
+background: none;
+}
+
+.carousel{
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+
+img{
+  width:75px;
+  border-radius: 25%;
+}
+p{
+margin: 10px
+}
+
+i{
+  margin:7px;
+}
+
+i:hover {
+  color: black;
+}
+
+.whover{
+  color: snow;
+}
+
+.carousel-control-prev{
+  margin: 0px;
+}
+
+.length{
+  height: 75px;
+}
+
+#footer{
+font-size: 70px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#me{
+padding: 50px 0px;
+text-align: center;
+}
+
+#title{
+  padding-bottom: 0px;
+}
+.stack{
+  font-size: 50px;
+  text-align: center;
+padding: 20px 0px;
+}
+
+.j{
+  font-size: 20px;
+}
+
+a{
+  color: white;
+}

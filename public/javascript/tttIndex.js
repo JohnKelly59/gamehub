@@ -31,12 +31,12 @@ function checkWinnings() {
 
   console.log(winningPositions[0]);
   const allEqual = arr => arr.every(v => v === arr[0])
-  // const allXO = arr => arr.every(val => val =="X" || val == "O");
+   const allXO = arr => arr.every(val => val =="X" || val == "O");
   // let allDone = allXO(gameboard);
 
   for (let i = 0; i < winningPositions.length; i++) {
 
-  //  let result = allEqual(winningPositions[i]);
+   let result = allEqual(winningPositions[i]);
     //let allDone = allXO(gameboard);
 
     if (result == true && winningPositions[i][0] == "X") {

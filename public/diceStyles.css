@@ -1,0 +1,83 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+.button{
+  border-radius: 12px;
+  font-size: 35px;
+  width: 200px;
+}
+.button:hover{
+  background-color: #be0000;
+  color: white;
+}
+
+body {
+  background-color: #5cb85c;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #be0000;
+}
+
+h6{
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 2px 0 #232931;
+  font-size: 50px;
+  color: #FFFAFA;
+}
+
+p {
+  font-size: 2rem;
+  color: #FFFAFA;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+.btns{
+  padding: 0;
+border: none;
+background: none;
+font-size: 30px;
+}
+
+.btns2{
+  font-size: 20px;
+  padding: 0;
+border: none;
+background: none;
+}
+
+.but{
+  background-color: #FFFAFA;
+  font-family: 'Indie Flower', cursive;
+  color: #5cb85c;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+#title{
+    font-family: 'Fredoka One', cursive;
+}

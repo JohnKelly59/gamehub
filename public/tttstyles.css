@@ -1,0 +1,62 @@
+input{
+  width: 40px;
+  text-align: center;
+  border-width: medium;
+border-color: #0275d8;
+border-style: solid;
+height: 150px;
+width: 150px;
+
+}
+
+.grid{
+  min-width: 0;
+  min-height: 0;
+}
+
+#title{
+    font-family: 'Fredoka One', cursive;
+}
+
+#main{
+  position: relative;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  margin: 0px 10px;
+}
+
+#b1{
+  border-top-left-radius: 25px;
+}
+
+#b3{
+  border-top-right-radius: 25px;
+}
+
+#b7{
+  border-bottom-left-radius: 25px;
+}
+
+#b9{
+  border-bottom-right-radius: 25px;
+}
+
+.btns{
+  padding: 0;
+border: none;
+background: none;
+font-size: 30px;
+}
+
+.btns2{
+  font-size: 20px;
+  padding: 0;
+border: none;
+background: none;
+}
+
+table{
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}

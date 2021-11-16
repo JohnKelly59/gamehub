@@ -1,0 +1,66 @@
+
+body{
+  font-family: 'Fredoka One', cursive;
+}
+
+.btns{
+  padding: 0;
+border: none;
+background: none;
+font-size: 30px;
+}
+
+
+.btns2{
+  font-size: 20px;
+  padding: 0;
+border: none;
+background: none;
+}
+
+
+
+main {
+align-items: center;
+text-align: center;
+padding-bottom: 40px;
+}
+
+
+
+.navigation{
+padding-bottom: 20px
+}
+
+
+.form-log {
+width: 100%;
+max-width: 330px;
+padding: 15px;
+margin: auto;
+}
+
+form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
