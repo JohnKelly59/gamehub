@@ -1,2 +1,6 @@
+<<<<<<< HEAD
+=======
+.env
+>>>>>>> 349d50db4840e51a949ae0bfa199b3d59bb9d23a
 node_modules
 config.js
